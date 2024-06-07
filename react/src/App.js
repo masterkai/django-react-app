@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/transactions")
+    fetch("http://localhost:8000/api/mymodel/")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       {data.map((item) => (
-        <div key={item.id}>description: {item.description}</div>
+        <div key={item.id}>name: {item.name}</div>
       ))}
     </div>
   );

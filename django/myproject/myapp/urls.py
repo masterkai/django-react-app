@@ -7,5 +7,5 @@ router.register('mymodel', MyModelViewSet)
 
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
 ]
