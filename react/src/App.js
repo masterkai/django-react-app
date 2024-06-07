@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/mymodel/")
+    fetch("http://localhost:8080/api/mymodel/")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
